@@ -1,0 +1,8 @@
+## sudo for minepeon user
+
+minepeon ALL = (ALL) ALL
+minepeon ALL = (root) NOPASSWD: /usr/bin/ntpdate
+minepeon ALL = (root) NOPASSWD: /usr/bin/ntpd
+minepeon ALL = (root) NOPASSWD: /usr/bin/reboot
+minepeon ALL = (root) NOPASSWD: /usr/bin/halt
+

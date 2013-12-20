@@ -1,0 +1,10 @@
+
+
+# run-parts
+* * * * * run-parts /opt/minepeon/etc/cron.d/1min
+*/2 * * * * run-parts /opt/minepeon/etc/cron.d/2min
+*/5 * * * * run-parts /opt/minepeon/etc/cron.d/5min
+*/15 * * * * run-parts /opt/minepeon/etc/cron.d/15min
+*/30 * * * * run-parts /opt/minepeon/etc/cron.d/30min
+0 * * * *   run-parts /opt/minepeon/etc/cron.d/hourly
+

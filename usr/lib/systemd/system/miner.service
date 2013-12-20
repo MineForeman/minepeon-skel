@@ -1,0 +1,14 @@
+[Unit]
+Description=cgminer
+After=ntpd.service
+
+[Service]
+Type=forking
+User=minepeon
+ExecStart=/opt/minepeon/etc/init.d/miner-start.sh
+ExecStop=/opt/minepeon/etc/init.d/miner-stop.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

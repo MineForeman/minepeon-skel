@@ -1,0 +1,40 @@
+#            _                                   
+#           (_)                                  
+#  _ __ ___  _ _ __   ___ _ __   ___  ___  _ __  
+# |  _   _ \| |  _ \ / _ \  _ \ / _ \/ _ \|  _ \ 
+# | | | | | | | | | |  __/ |_) |  __/ (_) | | | |
+# |_| |_| |_|_|_| |_|\___|  __/ \___|\___/|_| |_|
+#                        | |                     
+#                        |_|
+#
+# MinePeon udev rules for miners, mostly stolen from https://github.com/ckolivas/cgminer/blob/master/01-cgminer.rules
+
+# Butterfly Labs FPGA and ASIC devices
+ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6014", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# ModMinerQuad
+ATTRS{idVendor}=="1fc9", ATTRS{idProduct}=="0003", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# Lancelot, X6500 and Avalon 
+ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# Icarus
+ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# AsicminerUSB
+ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# Cairnsmore1
+ATTRS{idVendor}=="067b", ATTRS{idProduct}=="0230", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# Cairnsmore1-2
+ATTRS{idVendor}=="0403", ATTRS{idProduct}=="8350", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="plugdev"
+
+# Ztex
+ATTRS{idVendor}=="221a", ATTRS{idProduct}=="0100", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# BF1
+ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="204b", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+#Klondike
+ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="f60a", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
