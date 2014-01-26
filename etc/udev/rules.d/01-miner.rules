@@ -50,3 +50,6 @@ ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="00de", SUBSYSTEMS=="usb", ACTION=="a
 
 # SPI
 KERNEL=="spidev*", SUBSYSTEM=="spidev", GROUP="minepeon", MODE="0666"
+
+#Drillbit-8
+ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2404", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
