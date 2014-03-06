@@ -147,3 +147,5 @@ unset safe_term match_lhs
 # See also: https://wiki.archlinux.org/index.php/Bash#The_.22command_not_found.22_hook
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
 
+# Add MinePeon bin directory to the path
+export PATH=$PATH:/opt/minepeon/bin/
