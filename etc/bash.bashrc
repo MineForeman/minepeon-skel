@@ -149,3 +149,14 @@ unset safe_term match_lhs
 
 # Add MinePeon bin directory to the path
 export PATH=$PATH:/opt/minepeon/bin/
+
+# Run a 'menu' script if the user is minepeon (500)
+
+if [[ $EUID -ne 500 ]]; then
+  echo "Skepping MinePeon menu for root" 2>&1
+else
+  echo "MinePeon user running menu" 2>&1
+  MinePeonMenu.sh
+fi
+
+
