@@ -59,4 +59,4 @@ KERNEL=="spidev*", SUBSYSTEM=="spidev", GROUP="minepeon", MODE="0666"
 ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2404", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
 
 #Gridseed
-ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="plugdev"
+ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
