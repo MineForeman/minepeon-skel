@@ -63,3 +63,6 @@ ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", SUBSYSTEMS=="usb", ACTION=="a
 
 # ANT_S1
 ATTRS{idVendor}=="4254", ATTRS{idProduct}=="4153", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# HEX16A2
+ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="000a", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
