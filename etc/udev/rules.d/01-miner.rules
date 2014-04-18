@@ -66,3 +66,6 @@ ATTRS{idVendor}=="4254", ATTRS{idProduct}=="4153", SUBSYSTEMS=="usb", ACTION=="a
 
 # HEX16A2
 ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="000a", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# Gridseed??
+ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
