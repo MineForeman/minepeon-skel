@@ -69,3 +69,6 @@ ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="000a", SUBSYSTEMS=="usb", ACTION=="a
 
 # Gridseed??
 ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
+
+# Arduino UNO
+ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", SUBSYSTEMS=="usb", ACTION=="add", MODE="0666", GROUP="minepeon"
